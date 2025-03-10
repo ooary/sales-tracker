@@ -39,7 +39,7 @@ def main():
             df = pd.concat([df, new_data], ignore_index=True)
             save_data(df)
             st.success("Data berhasil ditambahkan!")
-            st.experimental_rerun()
+            st.rerun()
 
     # Sidebar filters
     area_list = df["area"].unique().tolist()
